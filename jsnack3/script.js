@@ -1,3 +1,6 @@
+// 3 - Il software deve chiedere per 10 volte all’utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+
 let number1 = parseInt(prompt("Inserisci un numero"));
 let number2 = parseInt(prompt("Inserisci un numero"));
 let number3 = parseInt(prompt("Inserisci un numero"));

@@ -1,12 +1,17 @@
+// 2- L’utente inserisce due parole in successione, con due prompt.
+// Il software stampa prima la parola più corta, poi la parola più lunga.
+
 let firstWord = prompt("Digita una parola");
 let lastWord = prompt("Digita una parola");
-const words = [firstWord, lastWord];
-let max = words[i];
+var phrase = (firstWord )+ ( lastWord);
+console.log(phrase)
+var words = phrase.split("");
+var max = words[0];
 
-for (let i = 0; i < words.length; i++) {
-	if (words[i] > max) {
-		max = words[i];
-	}
+for(var i = 0; i < words.length; i++) {
+  if(words[i].length > max.length ) {
+    max = words[i];
+  }
 }
 
-console.log('La parola più lunga è: '+max)
+console.log('la parola più lunga della frase è: ' + max);
