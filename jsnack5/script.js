@@ -2,17 +2,18 @@
 // Chiedi per 6 volte all’utente di inserire un numero,
 // se è dispari inseriscilo nell’array.
 
-let number1 = prompt("Inserisci un numero");
-let number2 = prompt("Inserisci un numero");
-let number3 = prompt("Inserisci un numero");
-let number4 = prompt("Inserisci un numero");
-let number5 = prompt("Inserisci un numero");
-let number6 = prompt("Inserisci un numero");
-var numbers = (number1 + number2 + number3 + number4 + number5 + number6);
-var numberList = ("")
+// 1. creo array vuoto
+// 2. chiedi 6 volte un numero all'utente
+// 3. inserisci nell'array vuoto solo i numeri dispari
 
-for (let i = 0; i < numbers.length; i++) {
-    if (numbers % 3 === 0) {
-        console.log(numberList);
+const arrayNumbers = [];
+
+for(let i = 0; i < 6; i++) {
+    let numbers = prompt("Inserisci un numero");
+
+    if(numbers % 2 !== 0) {
+        arrayNumbers.push(numbers);
     }
 }
+
+console.log(arrayNumbers);
